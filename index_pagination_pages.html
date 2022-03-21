@@ -304,7 +304,12 @@
 						card.appendChild(cardBody);
 						mainDiv.appendChild(card);
 						}
+						if(document.getElementById("page2").classList.contains("active")||document.getElementById("page3").classList.contains("active")){
+									document.getElementById("page1").classList.add("active");
+									document.getElementById("page3").classList.remove("active");
+									document.getElementById("page2").classList.remove("active");
 
+								}
 					}
 
 					function p2() {
@@ -337,6 +342,12 @@
 							card.appendChild(cardBody);
 							mainDiv.appendChild(card);
 							}
+								if(document.getElementById("page1").classList.contains("active")||document.getElementById("page3").classList.contains("active")){
+									document.getElementById("page1").classList.remove("active");
+									document.getElementById("page3").classList.remove("active");
+									document.getElementById("page2").classList.add("active");
+
+								}
 						}
 						
 						
@@ -370,6 +381,12 @@
 							card.appendChild(cardBody);
 							mainDiv.appendChild(card);
 							}
+							if(document.getElementById("page1").classList.contains("active")||document.getElementById("page2").classList.contains("active")){
+									document.getElementById("page3").classList.add("active");
+									document.getElementById("page2").classList.remove("active");
+									document.getElementById("page1").classList.remove("active");
+
+								}
 						}
 						
 					
